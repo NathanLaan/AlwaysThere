@@ -1,0 +1,25 @@
+{
+    "name": "AlwaysThere",
+    "version": "0.1.1",
+    "manifest_version": 2,
+    "description": "Google Chrome Extension to display a floating always-on-top window.",
+    "short_name": "AT",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "icons": {
+        "16" : "application.png",
+        "48" : "application.png",
+        "128" : "application.png"
+    },
+    "permissions": [
+        "storage",
+        "contextMenus", 
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "browser_action": {
+        "default_icon": "application.png", 
+        "default_title": "AlwaysThere",
+        "default_popup": "popup.html"
+    }
+}
