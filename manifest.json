@@ -1,6 +1,6 @@
 {
     "name": "AlwaysThere",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "manifest_version": 2,
     "description": "Google Chrome Extension to display a floating always-on-top window. Please enable Panels in chrome://flags.",
     "short_name": "AT",
