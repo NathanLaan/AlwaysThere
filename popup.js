@@ -37,11 +37,8 @@ var windowId = 'AlwaysThere';
 
 $(document).ready(function() {
     $("#navButton").click(function() {
-        var pageURL = $('#browserPagesList').val();        
-        chrome.windows.create({
-            url: pageURL, 
-            type: "panel"
-        });
+        var pageURL = $('#browserPagesList').val();  
+        gcapilib_CreatePanel(pageURL);
     });
     $("#flagsButton").click(function() {   
         chrome.windows.create({
