@@ -36,10 +36,6 @@ function loadPages(){
 var windowId = 'AlwaysThere';
 
 $(document).ready(function() {
-    chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
-        console.log("onMessage: " + request.winID);
-        loadPages();
-    });
     $("#navButton").click(function() {
         var pageURL = $('#browserPagesList').val();        
         chrome.windows.create({
